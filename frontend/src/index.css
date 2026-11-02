@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased;
+    font-family: 'Cairo', 'Tajawal', 'Segoe UI', system-ui, sans-serif;
+  }
+
+  /* تحسين مظهر حقول الإدخال على الهاتف */
+  input,
+  select,
+  textarea,
+  button {
+    font-family: inherit;
+  }
+
+  /* منع تكبير الصفحة تلقائياً على iOS عند التركيز في الحقول */
+  @media (max-width: 640px) {
+    input,
+    select,
+    textarea {
+      font-size: 16px;
+    }
+  }
+
+  ::selection {
+    @apply bg-brand-200 text-brand-900;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-slate-200/80 bg-white shadow-card;
+  }
+
+  .field-label {
+    @apply mb-2 block text-sm font-semibold text-slate-700;
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 shadow-sm
+           outline-none transition placeholder:text-slate-400
+           focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15
+           disabled:cursor-not-allowed disabled:bg-slate-100;
+  }
+
+  .field-error {
+    @apply border-accent-400 focus:border-accent-500 focus:ring-accent-500/15;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold
+           transition focus:outline-none focus:ring-4 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand-600 text-white shadow-sm hover:bg-brand-700 focus:ring-brand-500/25
+           active:translate-y-px;
+  }
+
+  .btn-secondary {
+    @apply btn border border-slate-300 bg-white text-slate-700 hover:bg-slate-50 focus:ring-slate-300/40;
+  }
+
+  .btn-danger {
+    @apply btn bg-accent-600 text-white hover:bg-accent-700 focus:ring-accent-500/25;
+  }
+
+  .btn-ghost {
+    @apply btn text-slate-600 hover:bg-slate-100 focus:ring-slate-300/40;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-bold;
+  }
+
+  .badge-success {
+    @apply badge bg-brand-100 text-brand-800;
+  }
+
+  .badge-muted {
+    @apply badge bg-slate-100 text-slate-600;
+  }
+
+  /* الأرقام تُعرض دائماً بشكل لاتيني منتظم داخل الجداول */
+  .num {
+    font-variant-numeric: tabular-nums;
+    direction: ltr;
+    unicode-bidi: isolate;
+  }
+}
+
+/* شريط تمرير أنيق للجداول */
+.scroll-thin::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.scroll-thin::-webkit-scrollbar-track {
+  background: transparent;
+}

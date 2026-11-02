@@ -1,0 +1,44 @@
+# ---- Secrets and runtime data (never commit) ----
+backend/.env
+frontend/.env
+backend/data/
+*.db
+*.db-wal
+*.db-shm
+
+# ---- Guest lists and exports ----
+sample_data/*.xlsx
+sample_data/*.xls
+sample_data/*.csv
+*.xlsx
+*.xls
+!frontend/public/**
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- Node ----
+node_modules/
+frontend/dist/
+npm-debug.log*
+yarn-error.log*
+.vite/
+
+# ---- Editors and OS ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Logs ----
+*.log
+
+# ---- Source logo (already published under frontend/public) ----
+*.jpg

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="شعار مؤتمر يوم الشباب العالمي - العراق">
+  <defs>
+    <radialGradient id="inner" cx="50%" cy="42%" r="62%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#f5fafd"/>
+      <stop offset="100%" stop-color="#dbe9f2"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8c96e"/>
+      <stop offset="50%" stop-color="#b58f2a"/>
+      <stop offset="100%" stop-color="#e8c96e"/>
+    </linearGradient>
+
+    <!-- مسارات النص المنحني -->
+    <path id="arcTop" d="M 104,256 A 152,152 0 0 1 408,256" fill="none"/>
+    <path id="arcBottom" d="M 92,256 A 164,164 0 0 0 420,256" fill="none"/>
+
+    <path id="sparkle" d="M0,-15 C1.6,-4.6 4.6,-1.6 15,0 C4.6,1.6 1.6,4.6 0,15 C-1.6,4.6 -4.6,1.6 -15,0 C-4.6,-1.6 -1.6,-4.6 0,-15 Z" fill="#f2d476"/>
+  </defs>
+
+  <!-- الخلفية والحلقات -->
+  <circle cx="256" cy="256" r="256" fill="#ffffff"/>
+  <circle cx="256" cy="256" r="250" fill="none" stroke="url(#gold)" stroke-width="4"/>
+  <circle cx="256" cy="256" r="240" fill="none" stroke="#ce2f2f" stroke-width="13"/>
+  <circle cx="256" cy="256" r="228" fill="none" stroke="#ffffff" stroke-width="6"/>
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#1e9e5a" stroke-width="9"/>
+  <circle cx="256" cy="256" r="212" fill="url(#inner)"/>
+
+  <!-- خطوط الكرة الأرضية الخفيفة -->
+  <g stroke="#c3dbe8" stroke-width="1.5" fill="none" opacity="0.6">
+    <circle cx="256" cy="256" r="198"/>
+    <ellipse cx="256" cy="256" rx="80" ry="198"/>
+    <ellipse cx="256" cy="256" rx="145" ry="198"/>
+    <path d="M72,186 H440 M60,256 H452 M72,326 H440"/>
+  </g>
+
+  <!-- النص المنحني العلوي -->
+  <text font-family="Cairo, Tajawal, Segoe UI, sans-serif" font-size="30" font-weight="700"
+        fill="#0f5138" text-anchor="middle" direction="rtl">
+    <textPath href="#arcTop" startOffset="50%">مؤتمر يوم الشباب العالمي</textPath>
+  </text>
+
+  <!-- بريق -->
+  <g transform="translate(122,236) scale(1.05)"><use href="#sparkle"/></g>
+  <g transform="translate(392,226) scale(1.25)"><use href="#sparkle"/></g>
+  <g transform="translate(104,296) scale(0.6)"><use href="#sparkle"/></g>
+  <g transform="translate(408,300) scale(0.6)"><use href="#sparkle"/></g>
+
+  <!-- كلمة العراق -->
+  <text x="244" y="206" font-family="Cairo, Tajawal, Segoe UI, sans-serif" font-size="46"
+        font-weight="800" fill="#ce2f2f" text-anchor="middle" direction="rtl">العراق</text>
+
+  <!-- الوجه الجانبي بخطوط حرة -->
+  <g fill="none" stroke="#131313" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- الجبهة والأنف والفم والذقن -->
+    <path d="M300,150 C338,152 364,180 360,214
+             C357,232 348,242 342,252
+             C338,258 346,263 342,268
+             C338,273 331,272 329,277
+             C327,283 335,287 331,293
+             C326,301 315,307 303,306"/>
+    <!-- الفك والرقبة -->
+    <path d="M303,306 C297,318 300,331 309,340 C318,349 326,357 329,368"/>
+    <!-- محيط الرأس الخلفي -->
+    <path d="M300,150 C258,152 230,186 230,230 C230,262 243,288 264,304"/>
+    <!-- الأذن -->
+    <path d="M292,238 C303,232 313,240 311,251 C309,261 300,265 294,259"/>
+    <!-- العين والحاجب -->
+    <path d="M322,216 C330,211 341,213 345,220" stroke-width="5.5"/>
+    <!-- خصلة الشعر المنسابة -->
+    <path d="M230,230 C199,240 179,268 179,300 C179,336 206,362 240,364"/>
+    <path d="M240,364 C275,367 302,349 310,320"/>
+    <path d="M264,304 C246,318 240,338 246,356"/>
+  </g>
+
+  <!-- كلمة IRAQ -->
+  <text x="192" y="342" font-family="Cairo, Segoe UI, sans-serif" font-size="46"
+        font-weight="800" fill="#1e9e5a" text-anchor="middle" letter-spacing="1.5">IRAQ</text>
+
+  <!-- النص المنحني السفلي -->
+  <text font-family="Cairo, Tajawal, Segoe UI, sans-serif" font-size="22" font-weight="700"
+        fill="#0f5138" text-anchor="middle" direction="rtl">
+    <textPath href="#arcBottom" startOffset="50%">فندق موفنبيك - المنطقة الخضراء</textPath>
+  </text>
+
+  <!-- سعف النخيل والبوابة التراثية -->
+  <g transform="translate(256,448) scale(0.86)">
+    <g stroke="#5da87b" stroke-width="2.8" fill="none" stroke-linecap="round">
+      <path d="M-58,-14 C-88,-30 -112,-26 -124,-8"/>
+      <path d="M-58,-14 C-84,-19 -102,-12 -111,1 M-60,-9 C-82,-5 -95,4 -101,15 M-62,-4 C-77,4 -85,15 -87,26"/>
+      <path d="M58,-14 C88,-30 112,-26 124,-8"/>
+      <path d="M58,-14 C84,-19 102,-12 111,1 M60,-9 C82,-5 95,4 101,15 M62,-4 C77,4 85,15 87,26"/>
+    </g>
+    <g stroke="#4a8f66" stroke-width="2.4" fill="none" stroke-linejoin="round">
+      <path d="M-60,28 H60"/>
+      <path d="M-50,28 V-18 H50 V28"/>
+      <path d="M-50,-18 L0,-44 L50,-18"/>
+      <path d="M-9,28 V6 C-9,-4 9,-4 9,6 V28"/>
+      <path d="M-36,28 V8 M-25,28 V8 M25,28 V8 M36,28 V8"/>
+      <path d="M-50,-18 H-62 V28 M50,-18 H62 V28"/>
+      <path d="M-62,-18 L-56,-30 L-50,-18 M50,-18 L56,-30 L62,-18"/>
+      <path d="M0,-44 V-52"/>
+    </g>
+  </g>
+</svg>
